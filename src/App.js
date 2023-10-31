@@ -1,20 +1,19 @@
+import { Text, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import React,{ useEffect } from 'react';
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
+import React, { useEffect } from 'react';
+
+// LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+// LogBox.ignoreAllLogs();//Ignore all log notifications
 
 const App = () => {
-
-
-
   useEffect(() => {
-   
     SplashScreen.hide();
   }, []);
   return (
-    <View></View>
+    <View>
+      <Text>HomeScreen-by MinhTuan</Text>
+    </View>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
