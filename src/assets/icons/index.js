@@ -1,0 +1,1 @@
+export {default as IMG_KabarLogo} from './IMG_KabarLogo.svg'
