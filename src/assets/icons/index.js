@@ -25,4 +25,6 @@ export { default as IC_Lock } from './IC_Lock.svg';
 export { default as IC_Question }from './IC_Question.svg';
 export { default as IC_Moon } from './IC_Moon.svg';
 export { default as IC_Logout } from './IC_Logout.svg';
-export {default as IMG_KabarLogo} from './IMG_KabarLogo.svg'
+export {default as IMG_KabarLogo} from './IMG_KabarLogo.svg';
+export {default as IC_ArrowDown} from './IC_ArrowDown.svg';
+export {default as IC_Plus} from './IC_Plus.svg';

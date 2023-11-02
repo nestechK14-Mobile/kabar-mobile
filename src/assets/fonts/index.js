@@ -6,5 +6,8 @@ export const FONTS = {
   MEDIUM: 'Inter-Medium',
   REGULAR: 'Inter-Regular',
   SEMIBOLD: 'Inter-SemiBold',
-  THIN: 'Inter-Thin'
+  THIN: 'Inter-Thin',
+  POPPINS_BOLD:'Poppins-Bold',
+  POPPINS_SEMIBOLD:'Poppins-SemiBold',
+  POPPINS_MEDIUM:'Poppins-Medium'
 };
