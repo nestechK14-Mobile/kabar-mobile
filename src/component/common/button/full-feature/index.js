@@ -1,43 +1,45 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import styles from './style';
-import { FONTS, IC_Bell } from '@/assets';
+import { FONTS } from '@/assets';
 const ButtonFullFeature = props => {
-  const {
+  const  {
     IconLeft,
     IconRight,
     IconRightColor,
     IconLeftColor,
-    LabelText,
-    LabeTextFont,
-    LabeTextdWeight,
-    LabeTextSize,
+    LabelText = 'label',
+    // LabeTextFont,
+    // LabeTextdWeight,
+    // LabeTextSize,
     buttoncolor,
     bordercolor,
     textColor,
     iconLeftSize,
-    iconRightSize,
+    iconRightSize
     
   } = props;
   return (
     
-    <TouchableOpacity style = { { backgroundColor: buttoncolor }}>
+    <TouchableOpacity >
       <View
         style={[
           styles.ButtonDefault,
-         
+          { backgroundColor: buttoncolor },
           { borderColor: bordercolor }
         ]}>
 
         <View>
-        <IconLeft width={iconLeftSize} height={iconLeftSize} fill={IconLeftColor} />
+
+        <IconLeft width={iconLeftSize} height={iconLeftSize} fill={IconLeftColor} /> 
         </View>
         
-        <Text style={{ paddingHorizontal:10, fontFamily: LabeTextFont, fontWeight: LabeTextdWeight, fontSize: LabeTextSize , color: textColor }}>
+        <Text style={{ paddingHorizontal:10, fontFamily: FONTS.POPPINS_MEDIUM, fontWeight: 700, fontSize: 20 , color: textColor }}>
           {LabelText}
         </Text>
         <IconRight IconRight width={iconRightSize} height={iconRightSize}fill={IconRightColor} />
-  
+        
+      
        
       </View>
     </TouchableOpacity>
