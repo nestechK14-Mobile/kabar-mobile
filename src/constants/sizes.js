@@ -8,4 +8,7 @@ export const SIZES = {
   SMALL_L: scale(10),
   SMALL_XL: scale(12),
   SMALL_XXL: scale(14),
+  FONT_SIZE: {
+    SMALL: scale(14)
+  }
 };
