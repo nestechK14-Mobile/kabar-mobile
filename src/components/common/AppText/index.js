@@ -1,5 +1,5 @@
 import { StyleSheet, Text } from 'react-native';
-import React from 'react';
+import React, { memo } from 'react';
 import { COLORS, DEFAULT_TEXT, SIZES } from '@/constants';
 import { FONTS } from '@/assets';
 
@@ -9,7 +9,7 @@ const AppText = props => {
   return <Text style={[styles.default, textStyle]}>{content}</Text>;
 };
 
-export default AppText;
+export default memo(AppText);
 
 const styles = StyleSheet.create({
   default: {
