@@ -2,7 +2,7 @@ import { Text, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import React, { useEffect } from 'react';
 import { FONTS, IC_Back, IMG_Art } from '@/assets';
-import { COLORS } from '@/constants';
+import { COLORS,SIZES } from '@/constants';
 
 const App = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <View style={{ flex: 1, justifyContent: 'space-around', alignItems: 'center' }}>
-      <Text style={{ color: COLORS.BLACK, fontFamily: FONTS.REGULAR }}>HomeScreen-by MinhTuan</Text>
+      <Text style={{ color: COLORS.BLACK, fontFamily: FONTS.REGULAR,fontSize:SIZES.SMALL_XXL }}>HomeScreen-by MinhTuan</Text>
       <IC_Back />
       <IMG_Art />
     </View>

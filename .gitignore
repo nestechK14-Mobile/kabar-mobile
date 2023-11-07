@@ -79,3 +79,5 @@ ios/Podfile.lock
 android/app/release/
 .vscode/
 .watchmanconfig
+
+*.lock
