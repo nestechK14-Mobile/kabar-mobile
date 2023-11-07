@@ -2,6 +2,7 @@ import SplashScreen from 'react-native-splash-screen';
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { AppLoading, AppText } from '@/components';
+import SignInContainer from '@/screens/signIn/SignIn.container';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,9 +17,7 @@ const App = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      {isLoading && <AppLoading />}
-      <AppText content={'Hello World, 123 Alo'} textStyle={{ color: 'red', fontSize: 100 }} />
-      <AppText content={'Hello World, 123 Alo'} textStyle={{ color: 'yellow', fontSize: 50 }} />
+      <SignInContainer />
     </View>
   );
 };

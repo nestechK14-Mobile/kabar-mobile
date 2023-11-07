@@ -1,11 +1,15 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 import styles from './SignIn.styles';
+import { AppLoading } from '@/components';
 
-const SignInView = () => {
+const SignInView = props => {
+  const { stated } = props;
+
   return (
     <View style={styles.container}>
-      <Text>SignInView</Text>
+      {stated === 12 && <AppLoading />}
+      <Text style={{ fontSize: 100 }}>{stated}</Text>
     </View>
   );
 };
