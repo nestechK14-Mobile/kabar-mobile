@@ -29,4 +29,3 @@ export { default as IMG_Sport } from './IMG_Sport.svg';
 export { default as IMG_Travel } from './IMG_Travel.svg';
 export { default as IMG_Money } from './IMG_Money.svg';
 export { default as IMG_Business } from './IMG_Business.svg';
-export { default as IMG_Logooo } from './IMG_Logooo';
