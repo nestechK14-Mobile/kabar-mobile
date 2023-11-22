@@ -1,8 +1,13 @@
 import * as React from 'react';
 import Svg, { G, Path, Defs } from 'react-native-svg';
-
+import { scale } from '@/utils';
 const SvgComponent = props => (
-  <Svg xmlns="http://www.w3.org/2000/svg" width={38} height={42} fill="none" {...props}>
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={scale(38)}
+    height={scale(42)}
+    fill="none"
+    {...props}>
     <G filter="url(#a)">
       <Path
         fill="#000"
