@@ -2,10 +2,12 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { FONTS, IC_Back, IC_Bell } from '@/assets';
 import { COLORS } from '@/constants';
+import styles from './Onboarding.styles';
 
 const OnboardingView = ({ title }) => {
   return (
     <View style={{ backgroundColor: COLORS.WHITE, flex: 1 }}>
+      <Text style={[styles.textDefault, styles.content]}>{title}</Text>
       <Text style={{ fontSize: 30, fontFamily: FONTS.BOLD }}>{title}</Text>
       <IC_Back />
       <IC_Bell />
