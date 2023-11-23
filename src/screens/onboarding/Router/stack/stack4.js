@@ -1,8 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import React from 'react';
-
-import Screen5 from '@/screens/onboarding/screens/screen5';
+import { Screen5 } from '../../screens';
 
 const Stack01Router = createNativeStackNavigator();
 

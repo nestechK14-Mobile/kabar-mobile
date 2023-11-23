@@ -15,7 +15,7 @@ const TabRouter = () => {
         component={Stack1}
         options={{
           tabBarLabel: 'Home',
-          tabBarActiveTintColor: 'red',
+          // tabBarActiveTintColor: 'red',
           tabBarIcon: () => (
             <Image
               source={require('../../../assets/icons/IC_Home.png')}
@@ -24,9 +24,36 @@ const TabRouter = () => {
           )
         }}
       />
-      <TabStack.Screen name={'Stack02'} component={Stack2} />
-      <TabStack.Screen name={'Stack03'} component={Stack3} />
-      <TabStack.Screen name={'Stack04'} component={Stack4} />
+      <TabStack.Screen
+        name={'Explore'}
+        component={Stack2}
+        options={{
+          tabBarLabel: 'Explore',
+          tabBarActiveTintColor: 'blue',
+          tabBarIcon: () => (
+            <Image
+              source={require('../../../assets/icons/IC_Laban.png')}
+              style={{ with: 24, height: 24 }}
+            />
+          )
+        }}
+      />
+      <TabStack.Screen
+        name={'BookMark'}
+        component={Stack3}
+        options={{
+          tabBarActiveTintColor: 'blue',
+          tabBarIcon: () => <Image source={require('../../../assets/icons/IC_Bookmark.png')} />
+        }}
+      />
+      <TabStack.Screen
+        name={'Profile'}
+        component={Stack4}
+        options={{
+          tabBarActiveTintColor: 'blue',
+          tabBarIcon: () => <Image source={require('../../../assets/icons/IC_Profile.png')} />
+        }}
+      />
     </TabStack.Navigator>
   );
 };
