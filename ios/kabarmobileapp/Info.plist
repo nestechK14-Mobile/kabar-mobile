@@ -53,16 +53,9 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Inter-Black.otf</string>
-		<string>Inter-Bold.otf</string>
-		<string>Inter-ExtraBold.otf</string>
-		<string>Inter-ExtraLightItalic.otf</string>
-		<string>Inter-Italic.otf</string>
-		<string>Inter-Light.otf</string>
-		<string>Inter-Medium.otf</string>
-		<string>Inter-Regular.otf</string>
-		<string>Inter-SemiBold.otf</string>
-		<string>Inter-Thin.otf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
