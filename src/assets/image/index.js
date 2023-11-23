@@ -23,7 +23,6 @@ export { default as IMG_Omar } from './IMG_Omar.svg';
 export { default as IMG_Model } from './IMG_Model.svg';
 export { default as IMG_Marley } from './IMG_Marley.svg';
 export { default as IMG_Technology } from './IMG_Technology.svg';
-export { default as IMG_Art } from './IMG_Art.svg';
 export { default as IMG_Politics } from './IMG_Politics.svg';
 export { default as IMG_Sport } from './IMG_Sport.svg';
 export { default as IMG_Travel } from './IMG_Travel.svg';
