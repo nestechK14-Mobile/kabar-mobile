@@ -4,7 +4,8 @@ import { SCREEN_NAMES, defaultConfigStack } from '@/constants';
 import { HomeScreen } from '@/screens';
 
 const HomeStack = createNativeStackNavigator();
-const HomesStack = () => {
+
+const HomeRoutes = () => {
   return (
     <HomeStack.Navigator screenOptions={defaultConfigStack}>
       <HomeStack.Screen name={SCREEN_NAMES.HOME_SCREEN} component={HomeScreen} />
@@ -12,4 +13,4 @@ const HomesStack = () => {
   );
 };
 
-export default HomesStack;
+export default HomeRoutes;

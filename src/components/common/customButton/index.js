@@ -14,7 +14,7 @@ const CustomButton = ({ children, onPress, type, ...rest }) => {
   };
   const TouchableComponent = getTouchableComponent();
   return (
-    <TouchableComponent onPress={onPress} {...rest}>
+    <TouchableComponent onPress={onPress} hitSlop={1} {...rest}>
       {children}
     </TouchableComponent>
   );

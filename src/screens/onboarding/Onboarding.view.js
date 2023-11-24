@@ -1,16 +1,15 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import { FONTS, IC_Back, IC_Bell } from '@/assets';
-import { COLORS } from '@/constants';
 import styles from './Onboarding.styles';
+import { AppText, Button } from '@/components';
 
-const OnboardingView = ({ title }) => {
+const OnboardingView = props => {
+  const { navigateToAuth } = props;
   return (
-    <View style={{ backgroundColor: COLORS.WHITE, flex: 1 }}>
-      <Text style={[styles.textDefault, styles.content]}>{title}</Text>
-      <Text style={{ fontSize: 30, fontFamily: FONTS.BOLD }}>{title}</Text>
-      <IC_Back />
-      <IC_Bell />
+    <View style={styles.container}>
+      <Button onPress={navigateToAuth}>
+        <AppText content={'Vào Sign In'} />
+      </Button>
     </View>
   );
 };
