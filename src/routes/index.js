@@ -1,10 +1,7 @@
-import { View, Text } from 'react-native';
 import React from 'react';
 
-import { OnboardingScreen, SignInScreen, HomeScreen } from '@/screens';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { SCREENS_STACK, SCREEN_NAMES, defaultConfigStack } from '@/constants';
-import AuthRoutes from './tabs/AuthStack';
+import { SCREENS_STACK, defaultConfigStack } from '@/constants';
 import MainRouteTab from './MainTab';
 import TabMain from '@/screens/onboarding/Router/mainrouter';
 
