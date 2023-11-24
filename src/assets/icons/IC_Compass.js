@@ -1,12 +1,11 @@
 import * as React from 'react';
 import Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
-import { memo } from 'react';
 const SvgComponent = props => (
   <Svg xmlns="http://www.w3.org/2000/svg" width={24} height={25} fill="none" {...props}>
     <G clipPath="url(#a)">
       <Path
         fill="#4E4B66"
-        d="M5 2.5h14a1 1 0 0 1 1 1v19.143a.5.5 0 0 1-.766.424L12 18.53l-7.234 4.536A.5.5 0 0 1 4 22.643V3.5a1 1 0 0 1 1-1Zm13 2H6v15.432l6-3.761 6 3.761V4.5Z"
+        d="M12 22.5c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16.001A8 8 0 0 0 12 20.5ZM15.5 9l-2 5-5 2 2-5 5-2Z"
       />
     </G>
     <Defs>
@@ -16,5 +15,4 @@ const SvgComponent = props => (
     </Defs>
   </Svg>
 );
-const Memo = memo(SvgComponent);
-export default Memo;
+export default SvgComponent;

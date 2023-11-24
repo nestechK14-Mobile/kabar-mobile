@@ -1,16 +1,18 @@
 import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { SCREENS_STACK, defaultConfigStack } from '@/constants';
+import { SCREENS_STACK, SCREEN_NAMES, defaultConfigStack } from '@/constants';
 import MainRouteTab from './MainTab';
-import TabMain from '@/screens/onboarding/Router/mainrouter';
+import AuthRoutes from './tabs/AuthStack';
+import { OnboardingScreen } from '@/screens';
 
 const MainStack = createNativeStackNavigator();
 
 const MainRoutes = () => {
   return (
     <MainStack.Navigator screenOptions={defaultConfigStack}>
-      <MainStack.Screen name={SCREENS_STACK.AUTH_STACK} component={TabMain} />
+      <MainStack.Screen name={SCREEN_NAMES.ONBOARDING_SCREEN} component={OnboardingScreen} />
+      <MainStack.Screen name={SCREENS_STACK.AUTH_STACK} component={AuthRoutes} />
       <MainStack.Screen name={SCREENS_STACK.MAIN_TAB} component={MainRouteTab} />
     </MainStack.Navigator>
   );
