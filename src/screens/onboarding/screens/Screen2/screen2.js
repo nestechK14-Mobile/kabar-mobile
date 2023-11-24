@@ -3,6 +3,7 @@ import { View, Image, TextInput, TouchableOpacity, Text, ScrollView } from 'reac
 import style from '../Screen2/style';
 import styles from '../Screen2/style';
 import { DEVICE } from '@/utils';
+import { IMG_BBC, IMG_KabarLabel, IMG_Ship } from '@/assets';
 
 const Screen2 = () => {
   const [text, setText] = useState('');
@@ -12,7 +13,7 @@ const Screen2 = () => {
   return (
     <View>
       <View style={style.Header}>
-        <Image source={require('../../../../assets/image/IMG_KabarLogo.png')} />
+        <IMG_KabarLabel />
         <TouchableOpacity>
           <Image source={require('../../../../assets/icons/Vector.png')} />
         </TouchableOpacity>
@@ -58,14 +59,7 @@ const Screen2 = () => {
       </View>
 
       <View style={{ marginTop: 10 }}>
-        <Image
-          source={require('../../../../assets/image/IMG_Ship.png')}
-          style={{
-            margin: 20,
-            height: 183,
-            width: 364 //?? tại sao
-          }}
-        />
+        <IMG_Ship />
         <Text style={{ fontWeight: 'bold', marginStart: 24 }}>Europe</Text>
         <Text style={{ fontWeight: 'bold', marginStart: 24 }}>
           Russian warship: Moskva sinks in Black Sea
@@ -73,7 +67,7 @@ const Screen2 = () => {
 
         <View style={{ flexDirection: 'row' }}>
           <View style={{ marginRight: 2, marginStart: 24 }}>
-            <Image source={require('../../../../assets/image/IC_BBC.png')} />
+            <Image source={IMG_BBC} />
           </View>
           <Text style={{ fontWeight: 'bold' }}>BBC</Text>
 
@@ -106,16 +100,16 @@ const Screen2 = () => {
       </View>
 
       <ScrollView style={{ height: DEVICE.HEIGH, margin: 20 }}>
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
-        <Image source={require('../../../../assets/image/IMG_Ship.png')} />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
+        <IMG_Ship />
       </ScrollView>
     </View>
   );
