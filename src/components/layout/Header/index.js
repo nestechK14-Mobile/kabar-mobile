@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 
-const SvgComponent = () => {
+const Header = () => {
   return (
     <View>
-      <Text>SvgComponent</Text>
+      <Text>Header</Text>
     </View>
   );
 };
 
-export default SvgComponent;
+export default Header;
