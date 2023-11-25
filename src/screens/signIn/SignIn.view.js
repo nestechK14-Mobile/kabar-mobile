@@ -5,8 +5,11 @@ import { FONTS, IC_CloseEye, IC_Mail, IC_MailBox } from '@/assets';
 import CustomInputField from '@/components/common/customInputField';
 import { Image } from 'react-native-svg';
 import { openEye } from '@/components';
+import { Button } from '@/components';
 
-const SignInView = () => {
+const SignInView = props => {
+  const { navigateToTab } = props;
+
   return (
     <View style={styles.container}>
       <Text style={[styles.textdefault, { color: 'black', fontSize: 48, fontWeight: '700' }]}>
@@ -46,6 +49,9 @@ const SignInView = () => {
       <TouchableOpacity>
         <IC_CloseEye />
       </TouchableOpacity>
+      <Button onPress={navigateToTab}>
+        <Text>Navigate to tab</Text>
+      </Button>
     </View>
   );
 };

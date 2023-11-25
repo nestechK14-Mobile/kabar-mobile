@@ -1,5 +1,5 @@
 import React from 'react';
-import { OnboardingScreen, SignInScreen } from '@/screens';
+import {  SignInScreen } from '@/screens';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SCREEN_NAMES, defaultConfigStack } from '@/constants';
 
