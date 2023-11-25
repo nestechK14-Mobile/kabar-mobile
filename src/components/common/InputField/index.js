@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const CustomInputField = ({ title, secureTextEntry,children, otpInput, onClearPress, ...rest}) => {
+const InputField = ({ title, secureTextEntry,children, otpInput, onClearPress, ...rest}) => {
   const [text, setText] = useState('');
 
   return (
@@ -29,4 +29,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default CustomInputField;
+export default InputField;

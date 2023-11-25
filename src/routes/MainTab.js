@@ -2,6 +2,9 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NAME_TAB, SCREENS_STACK } from '@/constants';
 import { View } from 'react-native';
+import { Text } from '@/components';
+import styles from './styles';
+import { BookmarkRoutes, ExploreRoutes, HomeRoutes, ProfileRoutes } from './tabs';
 import {
   IC_Bookmark,
   IC_BookmarkActive,
@@ -12,9 +15,6 @@ import {
   IC_Profile,
   IC_ProfileActive
 } from '@/assets';
-import { AppText } from '@/components';
-import styles from './styles';
-import { BookmarkRoutes, ExploreRoutes, HomeRoutes, ProfileRoutes } from './tabs';
 
 const MainTab = createBottomTabNavigator();
 
@@ -31,7 +31,7 @@ const MainRouteTab = () => {
             <View style={styles.tabContainer}>{focused ? <IC_HomeActive /> : <IC_Home />}</View>
           ),
           tabBarLabel: ({ focused }) => (
-            <AppText
+            <Text
               content={NAME_TAB.HOME_STACK}
               textStyle={focused ? styles.textActive : styles.textDefault}
             />
@@ -48,7 +48,7 @@ const MainRouteTab = () => {
             </View>
           ),
           tabBarLabel: ({ focused }) => (
-            <AppText
+            <Text
               content={NAME_TAB.EXPLORE_STACK}
               textStyle={focused ? styles.textActive : styles.textDefault}
             />
@@ -65,7 +65,7 @@ const MainRouteTab = () => {
             </View>
           ),
           tabBarLabel: ({ focused }) => (
-            <AppText
+            <Text
               content={NAME_TAB.BOOKMARK_STACK}
               textStyle={focused ? styles.textActive : styles.textDefault}
             />
@@ -82,7 +82,7 @@ const MainRouteTab = () => {
             </View>
           ),
           tabBarLabel: ({ focused }) => (
-            <AppText
+            <Text
               content={NAME_TAB.PROFILE_STACK}
               textStyle={focused ? styles.textActive : styles.textDefault}
             />

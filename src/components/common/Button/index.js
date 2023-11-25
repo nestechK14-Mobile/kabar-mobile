@@ -1,7 +1,7 @@
 import { TouchableOpacity, TouchableHighlight, TouchableWithoutFeedback } from 'react-native';
 import React from 'react';
 
-const CustomButton = ({ children, onPress, type, ...rest }) => {
+const Button = ({ children, onPress, type, ...rest }) => {
   const getTouchableComponent = () => {
     switch (type) {
       case 'highlight':
@@ -20,4 +20,4 @@ const CustomButton = ({ children, onPress, type, ...rest }) => {
   );
 };
 
-export default CustomButton;
+export default Button;
