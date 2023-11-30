@@ -9,6 +9,7 @@ const AuthRoutes = () => {
   return (
     <AuthStack.Navigator screenOptions={defaultConfigStack}>
       <AuthStack.Screen name={SCREEN_NAMES.SIGN_IN_SCREEN} component={SignInScreen} />
+      <AuthStack.Screen name={SCREEN_NAMES.ONBOARDING_SCREEN} component={OnboardingScreen} />
     </AuthStack.Navigator>
   );
 };
