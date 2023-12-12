@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { TouchableOpacity, Text, View, StyleSheet, Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const checkBox = ({ text, onPress, isChecked, containerStyle, textStyle, checkboxStyle }) => {
+const Checkbox = ({ text, onPress, isChecked, containerStyle, textStyle, checkboxStyle }) => {
   const animatedWidth = useRef(new Animated.Value(0)).current;
 
   const startAnimation = () => {
@@ -31,8 +31,6 @@ const checkBox = ({ text, onPress, isChecked, containerStyle, textStyle, checkbo
   );
 };
 
-export default checkBox;
-
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
@@ -53,3 +51,5 @@ const styles = StyleSheet.create({
     marginLeft: 10
   }
 });
+
+export default Checkbox;

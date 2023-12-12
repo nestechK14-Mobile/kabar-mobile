@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SCREENS_STACK, SCREEN_NAMES, defaultConfigStack } from '@/constants';
 import MainRouteTab from './MainTab';
 import AuthRoutes from './tabs/AuthStack';
-import { OnboardingScreen, SignInScreen } from '@/screens';
+import { OnboardingScreen, SignInScreen, SignUpScreen } from '@/screens';
 
 const MainStack = createNativeStackNavigator();
 
