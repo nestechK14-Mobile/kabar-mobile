@@ -2,7 +2,12 @@ import { StyleSheet } from 'react-native';
 import { DEVICE, scale } from '@/utils';
 import { COLORS } from '@/constants';
 import { FONTS } from '@/assets';
+
 const styles = StyleSheet.create({
+  wrapper: {
+    backgroundColor: COLORS.WHITE,
+    flex: 1
+  },
   container: {
     flex: 1,
     paddingTop: 30,

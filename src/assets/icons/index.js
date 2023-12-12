@@ -1,5 +1,6 @@
 export { default as IC_Kabar } from './IC_Kabar.js';
 export { default as IC_CloseEye } from './IC_CloseEye.js';
+export { default as IC_Eye } from './IC_Eye.svg';
 export { default as IC_Exclamation } from './IC_Exclamation.js';
 export { default as IC_Facebook } from './IC_Facebook.js';
 export { default as IC_Google } from './IC_Google.js';
