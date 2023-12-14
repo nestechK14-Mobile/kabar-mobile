@@ -4,12 +4,15 @@ import styles from './SignIn.styles';
 import { Button } from '@/components';
 
 const SignInView = props => {
-  const { navigateToTab } = props;
+  const { navigateToTab, navigateToSignUp } = props;
 
   return (
     <View style={styles.container}>
       <Button onPress={navigateToTab}>
         <Text>Navigate to tab</Text>
+      </Button>
+      <Button onPress={navigateToSignUp}>
+        <Text>Navigate to Sign up</Text>
       </Button>
     </View>
   );
