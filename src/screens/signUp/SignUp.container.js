@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SignUpView from './SignUp.view';
 import { PAGE_CONSTANTS } from '@/constants';
 
 const SignUpContainer = () => {
   const { CONTENT_LABEL } = PAGE_CONSTANTS.AUTHENTICATION;
   const { SIGN_UP } = CONTENT_LABEL;
+  const [userName, setUserName] = useState('');
+  const [errorText, setErrorText] = useState('');
 
   const onChangeValueUserName = value => {
-    console.log(value);
+    setUserName(value);
+  };
+
+  const handleSignUp = () => {
+    if (!userName) {
+      setErrorText('Cần nhập UserName!');
+    }
   };
 
   const propsSignUp = {
-    SIGN_UP,
-    onChangeValueUserName
+    onChangeValueUserName,
+    handleSignUp,
+    errorText,
+    SIGN_UP
   };
 
   return <SignUpView {...propsSignUp} />;

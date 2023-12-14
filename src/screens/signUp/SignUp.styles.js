@@ -26,6 +26,38 @@ const styles = StyleSheet.create({
     color: COLORS.GRAY,
     fontFamily: FONTS.REGULAR,
     fontSize: scale(20)
+  },
+  spacingInput: {
+    marginBottom: scale(16)
+  },
+  bottomContainer: {
+    flex: 1,
+    paddingHorizontal: scale(24),
+    marginTop: scale(16)
+  },
+  buttonSignUp: {
+    backgroundColor: COLORS.BLUE_CRAYOLA,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingVertical: scale(13),
+    borderRadius: scale(6)
+  },
+  titleSignUp: {
+    color: COLORS.WHITE,
+    fontSize: scale(16),
+    fontFamily: FONTS.SEMIBOLD
+  },
+  errorContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  errorContentStyle: {
+    color: COLORS.RED_DARK,
+    fontSize: scale(14),
+    fontFamily: FONTS.REGULAR,
+    marginHorizontal: scale(2),
+    textAlign: 'center',
+    textAlignVertical: 'center'
   }
 });
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import Text from '../Text';
-import { DEFAULT_TEXT } from '@/constants';
+import { COLORS, DEFAULT_TEXT } from '@/constants';
 import { IC_Close, IC_CloseEye, IC_Eye } from '@/assets';
 import { scale } from '@/utils';
 
@@ -16,6 +16,7 @@ const InputField = props => {
     valueInput,
     onChangeValueInput,
     isRead = false,
+    inputStyle,
     ...rest
   } = props;
   const [text, setText] = useState(valueInput);
@@ -44,9 +45,9 @@ const InputField = props => {
         <TextInput
           value={text}
           onChangeText={onChangeText}
-          secureTextEntry={isShow}
+          secureTextEntry={!isShow}
           keyboardType={otpInput ? 'numeric' : 'default'}
-          style={styles.input}
+          style={[styles.input, inputStyle]}
           disableFullscreenUI={isRead}
           {...rest}
         />
@@ -65,7 +66,7 @@ const InputField = props => {
             style={styles.button}
             hitSlop={2}
             activeOpacity={0.5}>
-            {isShow ? <IC_CloseEye /> : <IC_Eye />}
+            {!isShow ? <IC_CloseEye /> : <IC_Eye />}
           </TouchableOpacity>
         )}
       </View>
@@ -89,7 +90,8 @@ const styles = StyleSheet.create({
     color: 'red'
   },
   input: {
-    width: '80%'
+    width: '80%',
+    color: COLORS.BLACK
   },
   button: {
     width: scale(24),

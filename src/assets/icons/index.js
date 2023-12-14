@@ -33,3 +33,4 @@ export { default as IC_Filter } from './IC_Filter.js';
 export { default as IC_Compass } from './IC_Compass.js';
 export { default as IC_Eye } from './IC_Eye.js';
 export { default as IC_Close } from './IC_Close.js';
+export { default as IC_WarningInput } from './IC_WarningInput.js';
