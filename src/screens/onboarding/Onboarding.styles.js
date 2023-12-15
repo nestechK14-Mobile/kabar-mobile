@@ -1,6 +1,6 @@
 import { FONTS } from '@/assets';
 import { COLORS } from '@/constants';
-import { scale } from '@/utils';
+import { DEVICE, scale } from '@/utils';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -72,6 +72,12 @@ const styles = StyleSheet.create({
   },
   titleButton: {
     color: COLORS.WHITE
+  },
+  itemImage: {
+    resizeMode: 'contain'
+  },
+  containerItemImage: {
+    width: DEVICE.WIDTH
   }
 });
 

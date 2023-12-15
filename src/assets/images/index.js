@@ -1,3 +1,4 @@
+export * from './onboarding';
 export { default as IMG_Stairs } from './IMG_Stairs.js';
 export { default as IMG_Tower } from './IMG_Tower.js';
 export { default as IMG_Vegetables } from './IMG_Vegetables.js';
@@ -27,6 +28,6 @@ export { default as IMG_Sport } from './IMG_Sport.js';
 export { default as IMG_Travel } from './IMG_Travel.js';
 export { default as IMG_Money } from './IMG_Money.js';
 export { default as IMG_Business } from './IMG_Business.js';
-export { default as IMG_BBC } from './IMG_BBC';
+export { default as IMG_BBC } from './IMG_BBC.js';
 export { default as IMG_Ship } from './IMG_Ship.js';
 export { default as IMG_KabarLabel } from './IMG_KabarLabel.js';
