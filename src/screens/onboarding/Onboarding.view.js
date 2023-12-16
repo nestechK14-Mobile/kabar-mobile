@@ -46,25 +46,31 @@ const OnboardingView = props => {
         ref={slidesRef}
         scrollEventThrottle={32}
         onMomentumScrollEnd={updateCurrentSlideIndex}
+        style={styles.topContainer}
       />
       <View style={styles.bodyContainer}>
-        <Text content={'Lorem Ipsum is simply dummy'} textStyle={styles.content} />
-        <Text
-          content={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
-          textStyle={styles.subContent}
-        />
+        <View style={{ flex: 1 }}>
+          <Text content={'Lorem Ipsum is simply dummy'} textStyle={styles.content} />
+          <Text
+            content={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
+            textStyle={styles.subContent}
+          />
+        </View>
         <View style={styles.containerBottom}>
           <Paginator data={listImage} scrollX={scrollX} currentIndex={currentIndex} />
           <View style={styles.rowButton}>
-            <Button style={styles.buttonBack} onPress={pressBackImage}>
-              <Text content={'Back'} textStyle={styles.titleButton} />
+            <Button
+              style={styles.buttonBack}
+              onPress={pressBackImage}
+              disabled={currentIndex === 0}>
+              <Text content={'Back'} textStyle={styles.titleButtonBack} />
             </Button>
             <Button
               style={styles.buttonNext}
               onPress={currentIndex === listImage.length - 1 ? navigateToAuth : pressNextImage}>
               <Text
                 content={currentIndex === listImage.length - 1 ? 'Get Started' : 'Next'}
-                textStyle={styles.titleButton}
+                textStyle={styles.titleButtonNext}
               />
             </Button>
           </View>

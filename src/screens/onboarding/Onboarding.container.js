@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import OnboardingView from './Onboarding.view';
 import { useNavigation } from '@react-navigation/native';
 import { PAGE_CONSTANTS, SCREENS_STACK } from '@/constants';
-import { Animated } from 'react-native';
+import { Alert, Animated } from 'react-native';
 import { DEVICE } from '@/utils';
 
 const OnboardingContainer = () => {
@@ -15,9 +15,7 @@ const OnboardingContainer = () => {
     if (viewableItems && viewItemChange.length > 0) {
       setCurrentIndex(viewableItems[0]?.index);
     }
-    console.log(viewableItems, 'view');
-    console.log(currentIndex, 'index');
-  }).current;
+  })?.current;
   const viewConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
   const slidesRef = useRef(null);
 
@@ -41,11 +39,16 @@ const OnboardingContainer = () => {
   };
 
   const pressBackImage = () => {
-    const backSlide = currentIndex - 1;
-    if (backSlide !== LIST_IMAGE.length) {
-      const offset = backSlide * DEVICE.WIDTH;
+    const indexNow =
+      currentIndex === LIST_IMAGE.length - 1
+        ? currentIndex - 1
+        : currentIndex === 0
+        ? 0
+        : currentIndex;
+    if (indexNow !== LIST_IMAGE.length) {
+      const offset = indexNow * DEVICE.WIDTH;
       slidesRef?.current?.scrollToOffset({ offset });
-      setCurrentIndex(backSlide);
+      setCurrentIndex(indexNow);
     }
   };
 

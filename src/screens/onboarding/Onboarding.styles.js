@@ -8,9 +8,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.WHITE
   },
+  topContainer: {
+    flex: 1
+  },
   bodyContainer: {
     paddingHorizontal: scale(16),
-    marginTop: scale(12)
+    height: '30%'
   },
   rowDotSlider: {
     flexDirection: 'row',
@@ -34,12 +37,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    marginBottom: scale(12)
+    marginBottom: scale(16)
   },
   rowButton: {
     flexDirection: 'row',
-    width: '45%',
     alignItems: 'center',
     justifyContent: 'space-between'
   },
@@ -58,20 +59,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: scale(10),
-    backgroundColor: COLORS.GRAY,
-    width: scale(85),
-    paddingVertical: scale(12)
+    paddingVertical: scale(12),
+    paddingHorizontal: scale(10)
   },
   buttonNext: {
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: scale(10),
     backgroundColor: COLORS.BLUE_CRAYOLA,
-    width: scale(85),
-    paddingVertical: scale(12)
+    paddingVertical: scale(12),
+    paddingHorizontal: scale(24)
   },
-  titleButton: {
-    color: COLORS.WHITE
+  titleButtonBack: {
+    color: COLORS.GRAY,
+    fontSize: scale(16),
+    fontFamily: FONTS.SEMIBOLD
+  },
+  titleButtonNext: {
+    color: COLORS.WHITE,
+    fontSize: scale(16),
+    fontFamily: FONTS.SEMIBOLD
+  },
+  titleButtonDisabled: {
+    color: 'gray',
+    fontSize: scale(16),
+    fontFamily: FONTS.SEMIBOLD
   },
   itemImage: {
     resizeMode: 'contain'

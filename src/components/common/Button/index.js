@@ -1,7 +1,7 @@
 import { TouchableOpacity, TouchableHighlight, TouchableWithoutFeedback } from 'react-native';
 import React from 'react';
 
-const Button = ({ children, onPress, type, ...rest }) => {
+const Button = ({ children, onPress, type, disabled, ...rest }) => {
   const getTouchableComponent = () => {
     switch (type) {
       case 'highlight':
@@ -14,7 +14,7 @@ const Button = ({ children, onPress, type, ...rest }) => {
   };
   const TouchableComponent = getTouchableComponent();
   return (
-    <TouchableComponent onPress={onPress} hitSlop={1} {...rest}>
+    <TouchableComponent onPress={onPress} hitSlop={1} disabled={disabled} {...rest}>
       {children}
     </TouchableComponent>
   );
