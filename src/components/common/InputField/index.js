@@ -17,6 +17,8 @@ const InputField = props => {
     onChangeValueInput,
     isRead = false,
     inputStyle,
+    isPassword,
+    isRequired,
     ...rest
   } = props;
   const [text, setText] = useState(valueInput);
@@ -39,13 +41,13 @@ const InputField = props => {
     <View style={containerStyle}>
       <View style={styles.containerTitle}>
         {title && <Text content={title} textStyle={titleStyle} />}
-        {title && <Text content={'*'} textStyle={styles.required} />}
+        {title && isRequired && <Text content={'*'} textStyle={styles.required} />}
       </View>
       <View style={styles.containerInput}>
         <TextInput
           value={text}
           onChangeText={onChangeText}
-          secureTextEntry={!isShow}
+          secureTextEntry={isPassword && !isShow}
           keyboardType={otpInput ? 'numeric' : 'default'}
           style={[styles.input, inputStyle]}
           disableFullscreenUI={isRead}
