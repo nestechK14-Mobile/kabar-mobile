@@ -1,16 +1,20 @@
-import { View, Text } from 'react-native';
 import React from 'react';
-import styles from './SignIn.styles';
-import { Button } from '@/components';
+import { View } from 'react-native';
+import { Button, InputField, Text } from '@/components';
+import styles from '@/components/common/Button/ButtonLogin/styles';
+import ButtonSolid from '@/components/common/Button/ButtonSolidText';
 
 const SignInView = props => {
   const { navigateToTab } = props;
 
   return (
-    <View style={styles.container}>
-      <Button onPress={navigateToTab}>
-        <Text>Navigate to tab</Text>
-      </Button>
+    <View>
+      <View>
+        <ButtonSolid content={'nút 123'} onPress={navigateToTab} />
+      </View>
+      <View>
+        <InputField title={'cc'} />
+      </View>
     </View>
   );
 };

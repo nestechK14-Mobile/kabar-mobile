@@ -1,16 +1,16 @@
 import React from 'react';
 import SignInView from './SignIn.view';
 import { useNavigation } from '@react-navigation/native';
-import { SCREENS_STACK } from '@/constants';
+import { SCREEN_NAMES } from '@/constants';
 
 const SignInContainer = () => {
   const navigation = useNavigation();
 
   const navigateToTab = () => {
-    navigation.navigate(SCREENS_STACK.MAIN_TAB);
+    navigation.navigate(SCREEN_NAMES.SIGN_UP_SCREEN);
   };
 
-  return <SignInView {...{navigateToTab}}/>;
+  return <SignInView {...{ navigateToTab }} />;
 };
 
 export default SignInContainer;

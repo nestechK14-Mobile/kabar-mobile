@@ -1,11 +1,15 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import styles from './SignUp.styles';
+// import styles from './SignUp.styles';
 
-const SignUpView = () => {
+import styles from '@/components/common/Button/ButtonLogin/styles';
+import ButtonSolid from '@/components/common/Button/ButtonSolidText';
+
+const SignUpView = props => {
+  const { navigateToBack } = props;
   return (
     <View style={styles.container}>
-      <Text>SignUpView</Text>
+      <ButtonSolid content={'hêllo'} onPress={navigateToBack} />
     </View>
   );
 };
