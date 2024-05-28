@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import { IC_Back, IMG_BBC } from '@/assets';
+import { IC_Back, IMG_AuthorSample, IMG_BBC, IMG_Business } from '@/assets';
 import { TextAuthor } from '@/components';
 import ButtonAuthor from '@/components/common/AuthorScreen/ButtonAuthor';
 import styles from './Author.style';
@@ -20,7 +20,7 @@ const AuthorView = () => {
             headline={'Eupore'}
             subheading={'sdsadsdsad'}
             body={'aaaasdsad'}
-            imageSource={require('../../assets/image/IMG_Business')}
+            imageSource={require('@/assets/image/IMG_AuthorSample.png')}
           />
         );
       case 'Recent':
@@ -36,44 +36,31 @@ const AuthorView = () => {
   return (
     <View style={{ flex: 1, backgroundColor: 'white' }}>
       <View style={{ marginVertical: 16, marginHorizontal: 16 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <IC_Back />
-          <Text>...</Text>
-        </View>
-
         <View
           style={{
             flexDirection: 'row',
-            justifyContent: 'center',
             alignItems: 'center'
           }}>
-          <View>
-            <IMG_BBC />
-          </View>
-
+          <IMG_BBC />
           <View
             style={{
               flexDirection: 'row',
-              flex: 1,
-              justifyContent: 'center',
+              justifyContent: 'space-between',
               alignItems: 'center',
-              marginStart: 16
+              flex: 1,
+              marginHorizontal: 32
             }}>
-            <TextAuthor content={'1.2k'} content1={'Followers'} StyleText={{ flex: 1 }} />
-            <TextAuthor content={'124K'} content1={'Following'} StyleText={{ flex: 1 }} />
-            <TextAuthor content={'326'} content1={'News'} StyleText={{ flex: 1 }} />
+            <TextAuthor content={'1.2k'} content1={'Followers'} />
+            <TextAuthor content={'124K'} content1={'Following'} />
+            <TextAuthor content={'326'} content1={'News'} />
           </View>
         </View>
-
-        <View style={{ marginTop: 6 }}>
-          <TextAuthor content={'BBC News'} />
-        </View>
-        <View style={{ backgroundColor: 'red' }}>
-          <TextAuthor
-            content1={
-              'is an operational business division of the British Broadcasting Corporation responsible for the gathering and broadcasting of news and current affairs.'
-            }
-          />
+        {/* <View style={{ marginTop: 6 ??}}><TextAuthor content={'BBC News'} /> ??</View> */}
+        <View>
+          <Text>
+            'is an operational business division of the British Broadcasting Corporation responsible
+            for the gathering and broadcasting of news and current affairs.
+          </Text>
         </View>
         <View
           style={{

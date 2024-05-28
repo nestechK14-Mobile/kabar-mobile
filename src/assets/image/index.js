@@ -30,3 +30,4 @@ export { default as IMG_Business } from './IMG_Business.js';
 export { default as IMG_BBC } from './IMG_BBC';
 export { default as IMG_Ship } from './IMG_Ship.js';
 export { default as IMG_KabarLabel } from './IMG_KabarLabel.js';
+export { default as IMG_AuthorSample } from './IMG_AuthorSample.png';

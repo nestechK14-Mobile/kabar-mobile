@@ -17,16 +17,16 @@ const TextAuthor = ({ StyleText, content, content1, ...rest }) => {
 export default TextAuthor;
 const styles = StyleSheet.create({
   flex: {
-    flexDirection: 'column'
+    justifyContent: 'center'
   },
   StyleText1: {
     fontWeight: 'bold',
     fontSize: 16,
-    marginStart: 8,
     color: '#000',
-    marginTop: 10
+    textAlign: 'center'
   },
   StyleText2: {
-    marginBottom: 8
+    color: 'black',
+    textAlign: 'center'
   }
 });
