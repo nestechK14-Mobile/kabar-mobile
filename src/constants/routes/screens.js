@@ -5,7 +5,8 @@ export const SCREEN_NAMES = {
   HOME_SCREEN: 'HomeScreen',
   EXPLORE_SCREEN: 'ExploreScreen',
   BOOKMARK_SCREEN: 'BookMarkScreen',
-  PROFILE_SCREEN: 'ProfileScreen'
+  PROFILE_SCREEN: 'ProfileScreen',
+  AUTHOR_PROFILE: 'AuthorProfileScreen'
 };
 
 export const SCREENS_STACK = {
