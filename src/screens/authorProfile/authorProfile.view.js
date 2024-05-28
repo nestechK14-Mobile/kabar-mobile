@@ -4,7 +4,7 @@ import { PNG_Europe,PNG_BBC_News,PNG_Clock, FONTS} from '@/assets';
 import uuid from 'react-native-uuid';
 import styles from './authorProfile.styles';
 
-const AuthorProfileView = (props) => {
+const AuthorProfileView = (API_mock) => {
  const {
     id,
     image,
@@ -12,7 +12,7 @@ const AuthorProfileView = (props) => {
     source,
     sourceLogo,
     time,
-    content} = props;
+    content} = API_mock;
 
   const mockTest = [
     {
