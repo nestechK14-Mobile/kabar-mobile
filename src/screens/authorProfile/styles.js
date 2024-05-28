@@ -11,6 +11,12 @@ const styles = StyleSheet.create({
   },
   authorContent: {
     flexDirection: 'row'
+  },
+  contentAuthor: { flex: 3, flexDirection: 'row', marginLeft: scale(16) },
+  wrapAuthorContent: {
+    flexDirection: 'row',
+    flex: 1,
+    alignItems: 'center'
   }
 });
 
