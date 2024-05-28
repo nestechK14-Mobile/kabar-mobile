@@ -1,7 +1,6 @@
-import { View, Text, Image, StyleSheet, FlatList, ActivityIndicator } from 'react-native';
-import React, { useEffect, useId, useState } from 'react';
-import { PNG_Europe, PNG_BBC_News, PNG_Clock, FONTS } from '@/assets';
-import uuid from 'react-native-uuid';
+import { View, Text, Image, FlatList, ActivityIndicator } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { PNG_Europe, PNG_Clock, FONTS } from '@/assets';
 import styles from './authorProfile.styles';
 
 const AuthorProfileView = props => {
