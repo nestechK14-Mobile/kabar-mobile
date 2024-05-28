@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flexDirection:'row',
     justifyContent: 'center',
+    alignItems: 'center'
    
   },
   imageView: {
@@ -19,9 +20,9 @@ const styles = StyleSheet.create({
   },
   sourceAndTime: {
    
-    alignItems: 'left',
+    padding: 3,
     flexDirection: 'row',
-
+    alignItems: 'center'
 
   },
 

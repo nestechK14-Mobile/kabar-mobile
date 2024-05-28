@@ -1,10 +1,19 @@
 import { View, Text, Image, StyleSheet} from 'react-native';
 import React from 'react';
-import { PNG_Europe,PNG_BBC_News } from '@/assets';
+import { PNG_Europe,PNG_BBC_News,PNG_Clock, FONTS} from '@/assets';
 import uuid from 'react-native-uuid';
 import styles from './authorProfile.styles';
+
 const AuthorProfileView = (props) => {
- 
+ const {
+    id,
+    image,
+    category,
+    source,
+    sourceLogo,
+    time,
+    content} = props;
+
   const mockTest = [
     {
       id: uuid.v4(),
@@ -24,14 +33,20 @@ const AuthorProfileView = (props) => {
 
         <View style = {styles.contentView}>
 
-        <Text>{mockTest[0]?.category}</Text>
-        <Text>{mockTest[0]?.content}</Text>
+        <Text style = {{paddingTop: 2,fontWeight: 500}}>{mockTest[0]?.category}</Text>
+        <Text style = {{paddingTop: 5}}>{mockTest[0]?.content}</Text>
 
-        <View style = {styles.sourceAndTime}>
+        <View 
+        style = { styles.sourceAndTime}>
         <Image source={mockTest[0]?.sourceLogo}
-         style = {{resizeMode: 'contain' , height:30}}/>
-        <Text >{mockTest[0]?.source}</Text>
+         style = {{ resizeMode: 'contain' , height:30, width: 30}}/>
+        <Text  style = {{fontWeight:400,padding: 5}}>{mockTest[0]?.source}</Text>
+
+        <Image source={PNG_Clock}
+         style = {{ resizeMode: 'contain' , height:20, width: 20}}/>
+        <Text  style = {{fontSize: 14,paddingTop:10,fontFamily:FONTS.REGULAR,padding: 5}}>{mockTest[0]?.time}</Text>
         </View>
+        
 
         </View>
 
