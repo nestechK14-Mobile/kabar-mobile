@@ -1,5 +1,5 @@
-import { View, Text } from 'react-native';
-import React, { useState } from 'react';
+import {} from 'react-native';
+import React from 'react';
 import AuthorView from './Author.view';
 
 const Authorcontainer = () => {

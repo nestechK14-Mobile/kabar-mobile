@@ -6,7 +6,7 @@ const NewsArticle = ({ headline, subheading, imageSource, body }) => {
     <View>
       <Text style={{ fontSize: 24, fontWeight: 'bold' }}>{headline}</Text>
       <Text style={{ fontSize: 18, marginBottom: 10 }}>{subheading}</Text>
-      <Image source={imageSource} style={{ width: 50, height: 50 }} />
+      <Image source={imageSource} />
       <Text style={{ fontSize: 16 }}>{body}</Text>
     </View>
   );
