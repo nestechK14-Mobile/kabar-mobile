@@ -1,17 +1,28 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  mainContainer: {},
-  imageView: {},
+  mainContainer: {
+    margin:2,
+    padding: 1,
+    flexDirection: 'row',
+    // backgroundColor: 'red',
+    // borderColor: 'blue',
+    // borderWidth:3
+  },
+  imageView: {
+    padding:3,
+    resizeMode:'contain'
+  },
   contentView: {
     paddingLeft: 5,
     flex: 3,
-    justifyContent: 'left'
+    justifyContent: 'space-between',
+    alignItems: 'left'
   },
   sourceAndTime: {
-    padding: 3,
+    
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   }
 });
 

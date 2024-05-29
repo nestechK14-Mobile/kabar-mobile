@@ -1,4 +1,4 @@
-import { PNG_BBC_News, PNG_Europe, PNG_NewAPI1, PNG_NewAPI2, PNG_Sport } from '@/assets';
+import { PNG_BBC_News, PNG_Europe, PNG_NewAPI1, PNG_NewAPI2, PNG_Sport,PNG_USA_Today } from '@/assets';
 import uuid from 'react-native-uuid';
 export const mockAPI = [
   {
@@ -15,14 +15,14 @@ export const mockAPI = [
     image: PNG_Sport,
     category: 'Sport',
     source: 'BBC News',
-    sourceLogo: PNG_BBC_News,
+    sourceLogo: PNG_USA_Today,
     time: '2h ago',
     content: 'Frankfurt stun Barcelona to reach semi-finals'
   },
   {
     id: uuid.v4(),
     image: PNG_NewAPI1,
-    category: 'API1',
+    category: 'Entertaiment',
     source: 'BBC News',
     sourceLogo: PNG_BBC_News,
     time: '1 day ago',
@@ -31,7 +31,7 @@ export const mockAPI = [
   {
     id: uuid.v4(),
     image: PNG_NewAPI2,
-    category: 'API1',
+    category: 'Politic',
     source: 'BBC News',
     sourceLogo: PNG_BBC_News,
     time: '4 days ago',
