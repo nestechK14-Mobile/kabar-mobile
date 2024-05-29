@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
   },
 
   contentView: {
-    
-    paddingLeft: 5,
+    paddingTop:2,
+    paddingLeft:10,
     flex: 3,
     justifyContent: 'left',
   },
   sourceAndTime: {
    
-    padding: 3,
+    
     flexDirection: 'row',
     alignItems: 'center'
 

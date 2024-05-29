@@ -1,8 +1,9 @@
-import { View, Text, Image, StyleSheet} from 'react-native';
+import { View, Text, Image} from 'react-native';
 import React from 'react';
 import { PNG_Europe,PNG_BBC_News,PNG_Clock, FONTS} from '@/assets';
 import uuid from 'react-native-uuid';
 import styles from './authorProfile.styles';
+import { FlatList } from 'react-native-reanimated/lib/typescript/Animated';
 
 const AuthorProfileView = (API_mock) => {
  const {
@@ -26,15 +27,16 @@ const AuthorProfileView = (API_mock) => {
     }];
 
   return (
+
     <View style = {styles.mainContainer}>
         <View style = {styles.imageView}>
-          <Image source={PNG_Europe}/>
+          <Image source={mockTest[0]?.image}/>
         </View>
 
         <View style = {styles.contentView}>
 
         <Text style = {{paddingTop: 2,fontWeight: 500}}>{mockTest[0]?.category}</Text>
-        <Text style = {{paddingTop: 5}}>{mockTest[0]?.content}</Text>
+        <Text style = {{paddingTop: 2}}>{mockTest[0]?.content}</Text>
 
         <View 
         style = { styles.sourceAndTime}>
