@@ -1,7 +1,7 @@
 import { SafeAreaView, View } from 'react-native';
 import React from 'react';
 import styles from './styles';
-import { IC_Back, IMG_AuthorSample } from '@/assets';
+import { IMG_AuthorSample } from '@/assets';
 import { AuthorContent, Tabs } from './components';
 import styleCommon from '@/constants/styleCommon';
 import { AppButton, AppText, Header } from '@/components';
