@@ -20,3 +20,8 @@ export const AUTHOR_CONTENT = [
     content: '326'
   }
 ];
+
+export const TAB_TITLE_AUTH_PROFILE = {
+  NEWS: 'news',
+  RECENT: 'recent'
+};

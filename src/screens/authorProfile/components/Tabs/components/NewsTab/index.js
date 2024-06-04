@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 
-const TabItem = () => {
+const NewsTab = () => {
   return (
     <View>
-      <Text>TabItem</Text>
+      <Text>NewsTab</Text>
     </View>
   );
 };
 
-export default TabItem;
+export default NewsTab;
