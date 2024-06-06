@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.WHITE,
-    marginTop: scale(24)
+    paddingTop: scale(24)
   },
   authorContent: {
     flexDirection: 'row',

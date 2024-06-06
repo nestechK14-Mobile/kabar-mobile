@@ -31,3 +31,5 @@ export { default as IMG_BBC } from './IMG_BBC';
 export { default as IMG_Ship } from './IMG_Ship.js';
 export { default as IMG_KabarLabel } from './IMG_KabarLabel.js';
 export { default as IMG_AuthorSample } from './IMG_AuthorSample.js';
+export { default as IMG_TabItemSample } from './IMG_TabItemsSample.js';
+export { default as IMG_AuthorSampleSmall } from './IMG_AuthorSampleSmall.js';

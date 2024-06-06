@@ -46,7 +46,7 @@ const Tabs = () => {
           <AppText content={'Recent'} />
         </AppButton>
       </View>
-      {renderTabs()}
+      <View style={{ paddingHorizontal: 16, flex: 1 }}>{renderTabs()}</View>
     </>
   );
 };

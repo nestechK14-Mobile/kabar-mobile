@@ -4,8 +4,8 @@ const SvgComponent = props => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={100}
-    height={100}
+    width={props.width ?? 100}
+    height={props.height ?? 100}
     fill="none"
     {...props}>
     <Circle cx={50} cy={50} r={50} fill="#fff" />
